@@ -2,7 +2,8 @@
 <p align="center">
   <p align="center">
   <img src="https://img.shields.io/badge/PyQT6-Framework-blue" alt="PyQT6" />
-
+  <img src="https://img.shields.io/badge/PaddleOCR-Library-red"  />
+    <img src="https://img.shields.io/badge/SpeechEdge-Library-yellow"  />
 </p>
 </p>
 This project is a simple application built using the Model-View-Controller (MVC) architecture with PyQt6. It serves as a template for developing GUI applications in Python.
