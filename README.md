@@ -9,8 +9,8 @@ This project is a simple application built using the Model-View-Controller (MVC)
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
-   cd pyqt6-mvc-app
+   git clone https://github.com/thinhho0019/Tool_Trans_Sub_Video.git
+   cd tool_trans_sub_video
    ```
 
 2. Install the required dependencies:
