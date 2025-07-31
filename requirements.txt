@@ -1,3 +1,12 @@
 PyQt6
 numpy
 pandas
+#run test work flow git acction first time
+pre-commit #pre-commit install (when you run this command, it will install the pre-commit hooks)
+black
+flake8
+isort
+pytest
+#library video python
+
+setuptools
