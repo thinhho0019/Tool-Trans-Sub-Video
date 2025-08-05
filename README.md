@@ -1,31 +1,22 @@
-# PyQt6 MVC Application
-
+# Tool Translate Subtitle Video
+<p align="center">
+  <p align="center">
+  <img src="https://img.shields.io/badge/PyQT6-Framework-blue" alt="PyQT6" />
+  <img src="https://img.shields.io/badge/PaddleOCR-Library-red"  />
+    <img src="https://img.shields.io/badge/SpeechEdge-Library-yellow"  />
+</p>
+</p>
 This project is a simple application built using the Model-View-Controller (MVC) architecture with PyQt6. It serves as a template for developing GUI applications in Python.
 
-## Project Structure
 
-```
-pyqt6-mvc-app
-├── src
-│   ├── main.py          # Entry point of the application
-│   ├── model
-│   │   └── model.py     # Data model definitions
-│   ├── view
-│   │   └── view.py      # UI components and layout
-│   ├── controller
-│   │   └── controller.py # Intermediary between model and view
-│   └── utils
-│       └── __init__.py  # Utility functions and classes
-├── requirements.txt      # Project dependencies
-└── README.md             # Project documentation
-```
+ 
 
 ## Setup Instructions
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
-   cd pyqt6-mvc-app
+   git clone https://github.com/thinhho0019/Tool_Trans_Sub_Video.git
+   cd tool_trans_sub_video
    ```
 
 2. Install the required dependencies:
