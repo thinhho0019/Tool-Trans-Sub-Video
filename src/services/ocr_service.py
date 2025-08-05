@@ -1,14 +1,22 @@
+import cv2
+import numpy as np
+
+
 class OCRService:
     def __init__(self, lang="ch"):
         from paddleocr import PaddleOCR
 
         self.ocr = PaddleOCR(use_angle_cls=True, lang=lang)
 
-    def perform_ocr(self, image_path):
-        result = self.ocr.ocr(image_path)
-        return result
+    def perform_ocr(self, image_byte):
+        nparr = np.frombuffer(image_byte, np.uint8)
+        image = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+        result = self.ocr.predict(image)
+        return self.extract_text(result)
 
     def extract_text(self, ocr_result):
-        if isinstance(ocr_result, list) and len(ocr_result) > 0:
-            return "".join([line[1][0] for line in ocr_result[0]])
-        return ""
+        try:
+            string_obj = "".join(ocr_result[0]["rec_texts"])
+            return string_obj
+        except Exception:
+            return ""
